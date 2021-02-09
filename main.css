@@ -1,12 +1,55 @@
 body {
   margin: 0;
   padding: 0;
-  background:#eeaa5d ;
+  background-image: url("ph.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header img{
     width: 100%;
     height:auto;
 }
+.lijevo{
+  float: left;
+  width: 10%;
+  height: 500px;
+  background:#eeaa5d ;
+  margin-top: 1%;
+}
+.sredina{
+  float: left;
+  width: 80%;
+  height: 500px;
+  background-color: grey;
+  margin-top: 1%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 10px ;
+}
+.jedan{
+  float: left;
+  margin: 18px;
+  width: 30%;
+  height: 90%;
+  background-color: hotpink;
+  
+
+}
+.jedan:hover{
+  border: 0.2px solid;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px;
+  transform: rotateY(180deg);
+}
+
+.desno{
+  float: left;
+  width: 10%;
+  height: 500px;
+  background:#eeaa5d ;
+  margin-top: 1%;
+}
+
 .nav ul {
   list-style: none;
   background-color: #d62a2a85;
