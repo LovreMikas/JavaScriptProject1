@@ -1,58 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("ph.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(236, 236, 236, 0.842);
+}
+.header{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header img{
-    width: 100%;
-    height:auto;
+    height: 300px;
 }
-.lijevo{
-  float: left;
-  width: 10%;
-  height: 500px;
-  background:#eeaa5d ;
-  margin-top: 1%;
-}
-.sredina{
-  float: left;
-  width: 80%;
-  height: 500px;
-  background-color: grey;
-  margin-top: 1%;
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 10px ;
-}
-.jedan{
-  float: left;
-  margin: 18px;
-  width: 30%;
-  height: 90%;
-  background-color: hotpink;
-  
-
-}
-.jedan:hover{
-  border: 0.2px solid;
-  padding: 5px;
-  box-shadow: 5px 5px 5px 5px;
-  transform: rotateY(180deg);
-}
-
-.desno{
-  float: left;
-  width: 10%;
-  height: 500px;
-  background:#eeaa5d ;
-  margin-top: 1%;
-}
-
 .nav ul {
   list-style: none;
-  background-color: #d62a2a85;
+  background-color: #d3d3d385;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -74,14 +39,18 @@ body {
 }
  
 .nav a:hover {
-  background-color: #ff9737bd;
+  background-color: #be2828bd;
 }
 .Bill{
     margin-left: 50px;
+    border-left: rgba(170, 170, 170, 0.575) 1px solid;
+}
+.Bill a{
+  width:130px;
 }
 .nav a.active {
   background-color: rgba(255, 255, 255, 0.924);
-  color: #eeaa5d;
+  color: #be2828bd;
   cursor: default;
 }
  
@@ -98,9 +67,67 @@ body {
     display: inline-block;
     margin-right: -4px;
   }
+
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
+
+.lijevo{
+  float: left;
+  width: 10%;
+  height: 10px;
+  
+}
+.sredina{
+  float: left;
+  width: 80%;
+  height: auto;
+  background-color: rgb(73, 67, 67);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 10px ;
+}
+.desno{
+  float: left;
+  width: 10%;
+  height: 10px;
+}
+.kartica{
+  float: left;
+  margin: 18px;
+  width: 30%;
+  height: 600px;
+  background-color: hotpink;
+  -webkit-transition: transform 0.5s;
+  transform-style: preserve-3d;
+
+}
+.prednji,
+.straznji {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.prednji {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.straznji {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+  color: #20263f;
+}
+.kartica.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
