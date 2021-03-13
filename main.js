@@ -14,9 +14,9 @@ function myFunction() {
 
 //FLIPANJE KARTICA
 
-const karte = document.querySelectorAll(".kartica");
+const linkflip = document.querySelectorAll(".linkflip");
 
 function flip() {
-  this.classList.toggle("flip");
+  this.parentElement.parentElement.parentElement.classList.toggle("flip");
 }
-karte.forEach((karta) => karta.addEventListener("click", flip));
+linkflip.forEach((link) => link.addEventListener("click", flip));
