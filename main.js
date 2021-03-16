@@ -1,10 +1,10 @@
 //STICKY NAV BAR
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {zalipi()};
 
 var nav = document.getElementsByClassName("nav")[0];
 var sticky = nav.offsetTop;
 
-function myFunction() {
+function zalipi() {
   if (window.pageYOffset >= sticky) {
     nav.classList.add("sticky")
   } else {
