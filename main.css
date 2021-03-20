@@ -197,3 +197,12 @@ button{
   cursor: pointer;
   text-decoration: underline rgb(235, 235, 235); ;
 }
+i{
+  font-size: 30px;
+}
+.ikone{
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+  display: flex;
+}
