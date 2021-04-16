@@ -88,13 +88,12 @@ body {
     display: inline-block;
     margin-right: -4px;
   }
+  .nav{
+    position: sticky;
+  }
 
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 
 .lijevo{
   float: left;
@@ -259,6 +258,7 @@ button{
   margin: 0px;
   font-style: italic;
   color :rgb(26, 26, 26);
+
 
 }
 .linkflip , .linkflip2{
