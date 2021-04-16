@@ -15,8 +15,28 @@ body {
     align-items: center;
 }
 .header img{
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 30%;
+}
+@media screen and (max-width:940px) {
+  .header{
+    text-align: center;
+    background-color:rgba(236, 236, 236, 0.699);
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media screen and (max-width:600px) {
+  .header{
+    text-align: center;
+    background-color:rgba(236, 236, 236, 0.699);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 .nav{
   z-index: 1;
@@ -48,17 +68,11 @@ body {
 .nav a:hover {
   background-color: #be2828bd;
 }
-.Bill{
-    margin-left: 50px;
-    border-left: rgba(170, 170, 170, 0.575) 1px solid;
+.Bill a{   
+  color:#0000009a;
 }
-.Bill a{
-  width:130px;
-}
-.nav a.active {
-  background-color: rgba(255, 255, 255, 0.924);
-  color: #be2828bd;
-  cursor: default;
+.Bill a:hover{    
+  color:#ffffff;
 }
  
 @media screen and (min-width: 600px) {
@@ -125,20 +139,41 @@ body {
     float: left;
     margin: 18px;
     width: 45%;
-    height: 550px;
-    background-color: rgba(248, 248, 248, 0.842);
+    height: 500px;
+    background-color: rgba(161, 161, 161, 0.274);
     -webkit-transition: transform 0.5s;
     transform-style: preserve-3d;
   }
 
+}
+input{
+  width: 100px;
 }
 @media screen and (max-width: 955px){
   .kartica{
     float: left;
     margin: 18px;
     width: 90%;
-    height: 660px;
-    background-color: rgba(248, 248, 248, 0.842);
+    height: 550px;
+    background-color: rgba(161, 161, 161, 0.274);
+    -webkit-transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .sredina{
+    float: left;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    padding-left: 4%;
+  }
+}
+@media screen and (max-width: 700px){
+  .kartica{
+    float: left;
+    margin: 18px;
+    width: 90%;
+    height: 500px;
+    background-color: rgba(161, 161, 161, 0.274);
     -webkit-transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -182,14 +217,14 @@ body {
 .slika{
   height: 44%;
   width:92%;
-  border: #20263f 1px solid;
+  border-bottom: #20263f 1px solid;
   margin: 0px auto;
   margin-bottom: 2%;
 }
 .tekst{
   height: 38%;
   width: 92%;
-  border: #20263f 1px solid;
+  border-bottom: #20263f 1px solid;
   margin: 0px auto;
   margin-bottom: 2%;
   text-align: center;
@@ -201,7 +236,6 @@ img{
 .botun{
   height: 75px;
   width: 92%;
-  border: #20263f 1px solid;
   margin: 0px auto;
   text-align: center;
 }
@@ -224,12 +258,13 @@ button{
 .naziv{
   margin: 0px;
   font-style: italic;
-  color :rgb(77, 77, 77);
+  color :rgb(26, 26, 26);
 
 }
 .linkflip , .linkflip2{
   width: fit-content;
   height: fit-content;
+  text-decoration: underline;
   margin: 0px auto;
   color: rgb(32, 32, 32);
   color: linear-gradient(90deg, rgba(249,249,249,0.07046568627450978) 100%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
@@ -238,6 +273,7 @@ button{
 }
 i{
   font-size: 30px;
+  clear: none;
 }
 .ikone{
   width: fit-content;
@@ -252,7 +288,7 @@ i{
   display: flex;
   background-color: rgba(161, 161, 161, 0.082);
 }
-#dodaj:hover{
+#dodaj:hover,.linkflip:hover,.linkflip2:hover{
   animation: pulse 0.5s;
   animation-timing-function: linear;
   cursor: pointer; 
@@ -266,4 +302,19 @@ i{
   color: #D38487;
   font-size: 600%;
   text-shadow: 3px 5px 2px #47474717;
+}
+.sas{
+  height: 80%;
+  font-size: 25px;
+}
+input{
+  clear: none;
+  width: 30%;
+}
+.potvrdi{
+  width:30%;
+
+  clear: none;
+  margin-left: 8%;
+  margin-right: 8%;
 }

@@ -12,6 +12,28 @@ function zalipi() {
   }
 }
 
+//MALI EKRAN NAV
+var win = window,
+    doc = document,
+    docElem = doc.documentElement,
+    body = doc.getElementsByTagName('body')[0],
+    x = win.innerWidth || docElem.clientWidth || body.clientWidth;
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  if (x < 600){
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementByClassName("nav")[0].style.top = "0";
+    } else {
+      document.getElementByClassName("nav")[0].style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+}
+
+
 //FLIPANJE KARTICA
 
 const linkflip = document.querySelectorAll(".linkflip");
@@ -50,7 +72,7 @@ class kartica{
     	        /*----------------------------------------------*/
                 //SLIKA
                 var img = document.createElement('img');
-                img.setAttribute("src","burgers/512-5121429_fried-chicken-png-cnh-g-rn-gin-clipart.png");
+                img.setAttribute("src",slika);
                 slika.append(img);
 
             //PREDNJI TEKST
@@ -106,5 +128,93 @@ class kartica{
   }
 }
 
-var drugi = new kartica("Wagyu steak","10-15",true,1500);
-var treci = new kartica("Wagyu steak","10-15",true,1500);
+
+//DODAVANJE NOVIH
+
+function dodavanje(){
+  class inputkartica{
+    constructor (){
+        var kartica = document.createElement('div');
+        kartica.classList.add('kartica');
+        document.getElementsByClassName("sredina")[0].insertBefore(kartica, document.getElementById("dodaj"));
+          //PREDNJA KARTICA
+          var forma = document.createElement("form");
+          kartica.append(forma);
+          var prednji = document.createElement('div');
+          prednji.classList.add('prednji');
+          forma.append(prednji);
+            /*----------------------------------------------*/
+              //PREDNJA SLIKA DIV
+              var slika = document.createElement('div');
+              slika.classList.add('slika');
+              prednji.append(slika);
+                /*----------------------------------------------*/
+                  //SLIKA
+                  var i_img = document.createElement('input');//------------>
+                  i_img.setAttribute("type", "text");
+                  i_img.setAttribute("placeholder", "Url slike");
+                  slika.append(i_img);
+  
+              //PREDNJI TEKST
+              var tekst = document.createElement('div');
+              tekst.classList.add('tekst');
+              prednji.append(tekst);
+                /*-------------------------------------------------*/
+                  //PREDNJI TEKST NAZIV
+                  var i_naziv = document.createElement('input');//--------->
+                  i_naziv.setAttribute("type", "text");
+                  i_naziv.setAttribute("placeholder", "Naziv jela");
+                  tekst.append(i_naziv);
+                  //DIV IKONE
+                  var ikone = document.createElement('div');
+                  ikone.classList.add('ikone');
+                  tekst.append(ikone);
+                  /*--------------------------------------*/
+                    //P ZA IKONE
+                    var opis = document.createElement('p');
+                    opis.classList.add('opis');
+                    ikone.append(opis);
+                    //IKONE
+                    var i_vrime = document.createElement("input");//------>
+                    i_vrime.setAttribute("type", "text");
+                    i_vrime.setAttribute("placeholder", "Vrime kuhanja(min)");
+                    opis.innerHTML = "<i class='far fa-clock'></i>";
+                    var br = document.createElement("br");
+                    opis.append(i_vrime);
+                    opis.append(br);
+  
+                    var i_vege = document.createElement("input");//------>
+                    i_vege.setAttribute("type", "text");
+                    i_vege.setAttribute("placeholder", "Vegetarijansko (da/ne)");
+                    opis.innerHTML += "<i class='fas fa-seedling'></i>";
+                    opis.append(i_vege);
+                    
+                    opis.append(br);
+
+                    var i_kalorije = document.createElement("input");//------>
+                    i_kalorije.setAttribute("type", "text");
+                    i_kalorije.setAttribute("placeholder", "Kalorije(kJ)");
+                    opis.innerHTML += "<span><i class='fab fa-gripfire'></i></span>"
+                    opis.append(i_kalorije);
+                    opis.append(br);
+              //PREDNJI BOTUN
+              var i_div_botun = document.createElement('div');
+              i_div_botun.classList.add('botun');
+              prednji.append(i_div_botun);
+              
+              var i_botun = document.createElement('button');
+              i_botun.classList.add("potvrdi");
+              i_botun.type="submit";
+              i_botun.innerHTML="-";
+              i_div_botun.append(i_botun);
+              
+              var i_botun2 = document.createElement('button');
+              i_botun2.classList.add("potvrdi");
+              i_botun2.type="submit";
+              i_botun2.innerHTML="+";
+              i_div_botun.append(i_botun2);
+            
+    }
+  }
+  var input = new inputkartica;
+}

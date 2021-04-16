@@ -20,19 +20,18 @@
     <div class="header"><img src="robot.png"><span>Robocheff</span></div>
     <div class="nav">
         <ul>
-          <li class="Best"><a class="active" href="#">Favourite</a></li>
-          <li class="Pizza"><a href="#pica">Pizza</a></li>
-          <li class="Burgers"><a href="#hamburgeri">Burgers</a></li>
-          <li class="Meat"><a href="#alo">Meat</a></li>
-          <li class="Salads"><a href="#">Salads</a></li>
-          <li class="Bill"><a href="#">Cook now!</a></li>
+            <li class="Burgers"><a href="#hamburgeri">Burgers</a></li>
+            <li class="Meat"><a href="#meat">Meat</a></li>
+            <li class="Pizza"><a href="#pizza">Pizza</a></li>
+            <li class="Added"><a href="#added">Added</a></li>
+            <li class="Bill"><a href="#">Cook now!</a></li>
         </ul>
         
     </div>
     <div class="lijevo" ></div>
         <div class="sredina">
-            <div class="sekcija">
-                MESO
+            <div class="sekcija" id="hamburgeri">
+                Burgers
             </div>
             <div class="kartica">
                 <!-- prvi div -->
@@ -57,7 +56,10 @@
                     </div>
                 </div>
                 <div class="straznji">
-                    ogogogogogoogog
+                    <h3 class="naziv">Sastojci:</h3>
+                    <ul class="sas">
+                        <li>Butter 300g</li>
+                    </ul>
                     <p class="linkflip2">Natrag</p>
                 </div>
             </div>
@@ -84,7 +86,7 @@
                         <p class="linkflip">Vidi vise</p>
                     </div>
                 </div>
-                <div class="straznji" id="hamburgeri">
+                <div class="straznji" >
                     fgddffdfddf
                     <p class="linkflip2">Natrag</p>
                 </div>
@@ -119,6 +121,9 @@
                 </div>
             </div>
             <!-- treci kraj -->
+            <div class="sekcija" id="meat">
+                Meat
+            </div>
             <div class="kartica">
                 <!-- cetvrti div -->
                 <div class="prednji">
@@ -203,6 +208,9 @@
                 </div>
             </div>
             <!-- 6  kraj -->
+            <div class="sekcija" id="pizza">
+                Pizza
+            </div>
             <div class="kartica">
                 <!-- 7 div -->
                 <div class="prednji">
@@ -286,8 +294,11 @@
                     <p class="linkflip2">Natrag</p>
                 </div>
             </div>
-            <!-- 9 kraj -->    
-            <div class="kartica" id="dodaj">
+            <!-- 9 kraj -->
+            <div class="sekcija" id="added">
+                Added
+            </div>
+            <div class="kartica" id="dodaj" onclick="dodavanje()">
                    <i class="fas fa-plus"></i> 
             </div>
         </div>
