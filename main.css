@@ -83,17 +83,21 @@ body {
     line-height: 50px;
     font-size: 1.4em;
   }
- 
+  .nav{
+    position: -webkit-sticky;
+    position: sticky;
+  }
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
-  .nav{
-    position: sticky;
-  }
 
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .lijevo{
   float: left;
@@ -259,7 +263,6 @@ button{
   font-style: italic;
   color :rgb(26, 26, 26);
 
-
 }
 .linkflip , .linkflip2{
   width: fit-content;
@@ -317,4 +320,15 @@ input{
   clear: none;
   margin-left: 8%;
   margin-right: 8%;
+}
+.nadodaj{
+  width:20%;
+
+  clear: none;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.kolicina{
+  clear: none;
+  font-size: 200%;
 }
