@@ -1,74 +1,434 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
-    <div class="header"><img src="https://www.kasikornresearch.com/SiteCollectionDocuments/analysis/business/Macro/AppFood_Banner.jpg"></div>
+    <div class="header" id="home"><img src="robot.png"><span>Robocheff</span></div>
     <div class="nav">
         <ul>
-          <li class="Best"><a class="active" href="#">Best Deals</a></li>
-          <li class="Pizza"><a href="#">Pizza</a></li>
-          <li class="Burgers"><a href="#">Burgers</a></li>
-          <li class="Meat"><a href="#">Salads</a></li>
-          <li class="Salads"><a href="#">Side dish</a></li>
-          <li class="Bill"><a href="#">Bill</a></li>
+            <li class="Burgers"><a href="#hamburgeri">Burgers</a></li>
+            <li class="Meat"><a href="#meat">Meat</a></li>
+            <li class="Pizza"><a href="#pizza">Pizza</a></li>
+            <li class="Added"><a href="#added">Added</a></li>
+            <li class="Bill"><a href="#dodaj">Cook now!</a></li>
         </ul>
+        
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>ehehhehehehehehehee</p>
+    <div class="lijevo" ></div>
+        <div class="sredina">
+            <div class="sekcija" id="hamburgeri">
+                Burgers
+            </div>
+            <div class="kartica">
+                <!-- prvi div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/double-double-removebg-preview.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i> 10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegetarian
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji">
+                    <div class="tekst">
+                    <h3 class="naziv">Sastojci:</h3>
+                </div>
+                    <ul class="sas">
+                        <li>Maslac 50g</li>
+                        <li>Pljeskavica 150g</li>
+                        <li>Svježa salata</li>
+                        <li>Svježa rajčica</li>
+                        <li>Cheedar sir</li>
+                        <li>Tajni umak </li>
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- kraj prvog -->
+            <div class="kartica">
+                <!-- drugi div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/burger_sandwich_PNG4135.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i> 10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1900kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji" >
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li></li>
+                        <li>Pljeskavica 100g</li>
+                        <li>Svježa salata</li>
+                        <li>Svježa rajčica</li>
+                        <li>Cheedar sir</li>
+                        <li>Tajni umak </li>
+                        <li>Crveni luk </li>
+                        <li>Slanina </li>
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- drugi kraj -->
+            <div class="kartica">
+                <!-- treci div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/veggie-burger.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i> 7-10min
+                            <br>
+                            <i class="fas fa-seedling"></i>100% vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 900kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li> Tofu Pljeskavica 100g</li>
+                        <li>Svježa salata</li>
+                        <li>Svježa rajčica</li>
+                        <li>Cheedar sir</li>
+                        <li>Tajni umak </li>
+                        <li>Crveni luk </li>
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- treci kraj -->
+            <div class="sekcija" id="meat">
+                Meat
+            </div>
+            <div class="kartica">
+                <!-- cetvrti div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/PngItem_1531729.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i>10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li>Rebra 500g</li>
+                        <li>Barbecue umak </li>
+                    </ul>
+                    <div class="tekst">
+                        </ul>
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- cetvrti kraj -->
+            <div class="kartica">
+                <!-- peti div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/steak_PNG50.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i>10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li>Odrezak 500g</li>
+                        <li>Krupna morska sol </li>
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- peti kraj -->
+            <div class="kartica">
+                <!-- 6 div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/512-5121429_fried-chicken-png-cnh-g-rn-gin-clipart.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i>10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji" id="alo">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li>4 pileća batka </li>
+                        <li>5 pilećih krilaca </li>
+                        <li>2 jaja </li>
+                        <li>Krušne mrvice</li>
+                        <li>Brašno</li>
 
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- 6  kraj -->
+            <div class="sekcija" id="pizza">
+                Pizza
+            </div>
+            <div class="kartica">
+                <!-- 7 div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/pepperoni_adven_zestypepperoni.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i>10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji" id="pica">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li>Brašno 300g</li>
+                        <li> Sol </li>
+                        <li>Sir Gauda </li>
+                        <li>Pepperoni salamu</li>
+
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- 7 kraj -->
+            <div class="kartica">
+                <!-- 8 div -->
+                <div class="prednji" id = "pica">
+                    <div class="slika">
+                        <img src="burgers/chilli-PNG-Photo.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i>10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>Not vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li>Brašno 300g</li>
+                        <li>Pasirana rajčica</li>
+                        <li>Sir Gauda </li>
+                        <li>Mozzarella sir </li>
+                        <li>Pepperoni salama</li>
+                        <li>Chilli paprika </li>
+                        <li>Crne masline </li>
+
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- 8 kraj -->
+            <div class="kartica">
+                <!-- 9 div -->
+                <div class="prednji">
+                    <div class="slika">
+                        <img src="burgers/vegan_PNG43986.png"/>
+                    </div>
+                    <div class="tekst">
+                        <h3 class="naziv">In-n-out</h3>
+                        <div class="ikone">
+                            <p class="opis"><i class="far fa-clock"></i>10-15min
+                            <br>
+                            <i class="fas fa-seedling"></i>100% vegan
+                            <br>
+                            <i class="fab fa-gripfire"></i> 1500kJ
+                        </div>
+                    </p>
+                    </div>
+                    <div class="botun">
+                        <button type="button" class="ukosaru">Skuhaj mi</button>
+                        <p class="linkflip">Vidi vise</p>
+                    </div>
+                </div>
+                <div class="straznji">
+                    <div class="tekst">
+                        <h3 class="naziv">Sastojci:</h3>
+                    </div>
+                    <ul class="sas">
+                        <li>Brašno 300g</li>
+                        <li>Pasirana rajčica</li>
+                        <li>Veganski sir </li>
+                        <li>Gljive</li>
+                        <li>Brokula</li>
+                        <li>Rajčica </li>
+
+                    </ul>
+                    <div class="tekst">
+                    </div>
+                    <p class="linkflip2">Natrag</p>
+                </div>
+            </div>
+            <!-- 9 kraj -->
+            <div class="sekcija" id="added">
+                Added
+            </div>
+            <div class="kartica" id="dodaj" onclick="dodavanje()">
+                   <i class="fas fa-plus"></i> 
+            </div>
+        </div>
+        <div class="desno"></div>
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2021 Copyright Robocheff Text
+              <a class="grey-text text-lighten-4 right" href="#home">Robocheff</a>
+              </div>
+            </div>
+          </footer>
     <script src='main.js'></script>
 </body>
 </html>

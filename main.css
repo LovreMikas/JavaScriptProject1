@@ -1,15 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body {
-  margin: 0;
-  padding: 0;
-  background:#eeaa5d ;
+    margin: 0;
+    padding: 0;
+    background-color: #EE6E73;
+    font-family: 'EB Garamond', serif;
+    
+}
+.header{
+    text-align: center;
+    background-color:rgba(236, 236, 236, 0.699);
+    font-size: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header img{
-    width: 100%;
-    height:auto;
+    height: auto;
+    width: 30%;
+}
+@media screen and (max-width:940px) {
+  .header{
+    text-align: center;
+    background-color:rgba(236, 236, 236, 0.699);
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media screen and (max-width:600px) {
+  .header{
+    text-align: center;
+    background-color:rgba(236, 236, 236, 0.699);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+.nav{
+  z-index: 1;
+  font-style: normal;
 }
 .nav ul {
   list-style: none;
-  background-color: #d62a2a85;
+  background-color: #d3d3d385;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -27,19 +62,17 @@ body {
   text-decoration: none;
   color: #fff;
   display: block;
-  transition: .2s background-color;
+  transition: .2s;
 }
  
 .nav a:hover {
-  background-color: #ff9737bd;
+  background-color: #be2828bd;
 }
-.Bill{
-    margin-left: 50px;
+.Bill a{   
+  color:#0000009a;
 }
-.nav a.active {
-  background-color: rgba(255, 255, 255, 0.924);
-  color: #eeaa5d;
-  cursor: default;
+.Bill a:hover{    
+  color:#ffffff;
 }
  
 @media screen and (min-width: 600px) {
@@ -50,14 +83,252 @@ body {
     line-height: 50px;
     font-size: 1.4em;
   }
- 
+  .nav{
+    position: -webkit-sticky;
+    position: sticky;
+  }
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
+
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.lijevo{
+  float: left;
+  width: 10%;
+  height: 10px;
+  
+}
+.sredina{
+  float: left;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  padding-left: 2%;
+}
+.desno{
+  float: left;
+  width: 10%;
+  height: 10px;
+}
+.sekcija{
+  width: 100%;
+  font-size: 50px;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.774);
+  clear: both;
+}
+.kartica{
+  float: left;
+  margin: 18px;
+  width: 30%;
+  height: 550px;
+  background-color: rgba(161, 161, 161, 0.274);
+  -webkit-transition: transform 0.5s;
+  transform-style: preserve-3d;
+  border-right: 1px solid rgba(0, 0, 0, 0.308);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+  box-shadow: 10px 11px 9px 0px rgba(0,0,0,0.19);
+-webkit-box-shadow: 10px 11px 9px 0px rgba(0,0,0,0.19);
+-moz-box-shadow: 10px 11px 9px 0px rgba(0,0,0,0.19);
+}
+@media screen and (max-width: 1390px){
+  .kartica{
+    float: left;
+    margin: 18px;
+    width: 45%;
+    height: 500px;
+    background-color: rgba(161, 161, 161, 0.274);
+    -webkit-transition: transform 0.5s;
+    transform-style: preserve-3d;
   }
+
+}
+input{
+  width: 100px;
+}
+@media screen and (max-width: 955px){
+  .kartica{
+    float: left;
+    margin: 18px;
+    width: 90%;
+    height: 550px;
+    background-color: rgba(161, 161, 161, 0.274);
+    -webkit-transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .sredina{
+    float: left;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    padding-left: 4%;
+  }
+}
+@media screen and (max-width: 700px){
+  .kartica{
+    float: left;
+    margin: 18px;
+    width: 90%;
+    height: 500px;
+    background-color: rgba(161, 161, 161, 0.274);
+    -webkit-transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .sredina{
+    float: left;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    padding-left: 4%;
+  }
+
+}
+
+.prednji,
+.straznji {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.prednji {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  padding-top: 10px;
+}
+
+.straznji {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+  color: #20263f;
+  padding-top: 10px;
+}
+.kartica.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.slika{
+  height: 44%;
+  width:92%;
+  border-bottom: #20263f 1px solid;
+  margin: 0px auto;
+  margin-bottom: 2%;
+}
+.tekst{
+  height: 38%;
+  width: 92%;
+  border-bottom: #20263f 1px solid;
+  margin: 0px auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.botun{
+  height: 75px;
+  width: 92%;
+  margin: 0px auto;
+  text-align: center;
+}
+button{
+  cursor:pointer;
+  height: 50px;
+  width: 45%;
+  border: 0px solid white;
+  border-radius: 15px;
+  background: rgba(250, 250, 250, 0.644);
+  background: linear-gradient(90deg, rgba(250, 250, 250, 0.664) 100%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+  -webkit-box-shadow: 0px 4px 25px 10px rgba(0,0,0,0.17); 
+  box-shadow: 0px 4px 45px 10px rgba(0,0,0,0.17);
+  font-size: 120%;
+}
+.botun button:hover , .linkflip:hover{
+  transform: scale(1.05);
+  transition: all ease 250ms;
+}
+.naziv{
+  margin: 0px;
+  font-style: italic;
+  color :rgb(26, 26, 26);
+
+}
+.linkflip , .linkflip2{
+  width: fit-content;
+  height: fit-content;
+  text-decoration: underline;
+  margin: 0px auto;
+  color: rgb(32, 32, 32);
+  color: linear-gradient(90deg, rgba(249,249,249,0.07046568627450978) 100%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+  font-weight: 500;
+  cursor: pointer;
+}
+i{
+  font-size: 30px;
+  clear: none;
+}
+.ikone{
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+  display: flex;
+}
+#dodaj{
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgba(161, 161, 161, 0.082);
+}
+#dodaj:hover,.linkflip:hover,.linkflip2:hover{
+  animation: pulse 0.5s;
+  animation-timing-function: linear;
+  cursor: pointer; 
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02);}
+  100% { transform: scale(1); }
+  }
+.fas.fa-plus{
+  color: #D38487;
+  font-size: 600%;
+  text-shadow: 3px 5px 2px #47474717;
+}
+.sas{
+  height: 80%;
+  font-size: 25px;
+}
+input{
+  clear: none;
+  width: 30%;
+}
+.potvrdi{
+  width:30%;
+
+  clear: none;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.nadodaj{
+  width:20%;
+
+  clear: none;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.kolicina{
+  clear: none;
+  font-size: 200%;
+}
